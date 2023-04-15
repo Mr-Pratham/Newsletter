@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const https = require('https');
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 require('dotenv').config();
 
 const listId = process.env.LIST_ID;
